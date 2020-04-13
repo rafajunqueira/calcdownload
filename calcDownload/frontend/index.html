@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="index.js"></script>
+        <title>Calculadora de Download</title>
+    </head>
+    <body>
+        <div class="container" id="inputs-container">
+            <h2>Calculadora de Downloads</h2>
+            <input type="text" placeholder="Tamanho do Arquivo"
+                class="inputValue" name="fileSize" id="fileSize">
+            <select name="fileSizeDropdown"
+                id="fileSizeDropdown" class="speedDropdown">
+                <option value="1">MB</option>
+                <option value="2">GB</option>
+                <option value="3">TB</option>
+            </select>
+            <p></p>
+
+            <input type="text" placeholder="Velocidade do Download/por segundo"
+                class="inputValue"
+                name="downloadSpeed"
+                id="downloadSpeed">
+            <select class="speedDropdown" name="downloadSpeedDropdown"
+                id="downloadSpeedDropdown">
+                <option value="1">MB</option>
+                <option value="2">GB</option>
+                <option value="3">TB</option>
+            </select>
+            <p></p>
+
+            <input type="text" placeholder="Tempo Estimado de Conclusão"
+                class="inputValue" name="ETC" id="ETC">
+            <div id="button">
+                <a href="#" class="calculate" onclick="calculate()">Calcular</a>
+                <a href="#" class="calculate" onclick="measure()">MeasureUnit</a>
+            </div>
+        </div>
+
+    </body>
+</html>
