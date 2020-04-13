@@ -9,9 +9,6 @@ function calculate() {
     downloadSpeed = parseFloat(document.getElementById("downloadSpeed").value);
 
     MeasureUnit[0] = document.getElementById("downloadSpeedDropdown").value;
-
-
-
 }
 
 function printResult() {
@@ -21,6 +18,4 @@ function printResult() {
 function measure() {
     fileSizeMU = document.getElementById("fileSizeDropdown").value;
     speedMU = document.getElementById("downloadSpeedDropdown").value;
-
-    
 }
